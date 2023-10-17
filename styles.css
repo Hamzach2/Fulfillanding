@@ -81,8 +81,11 @@ li {
   filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7));
 }
 
-.phone2{
+.l3iba2{
   filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7));
+}
+.phone2{
+ 
   width: 50%;
   margin-left: 29%;
   border-radius: 10px;
