@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <title>Fulfil</title>
+
+
 </head>
 <body>
     <style>
@@ -55,11 +57,47 @@
             Sign up to be the first to know about our launch & claim your early bird gift. 
         </p>
         <div class="irsal">
-            <form name="submit-to-google-sheet">
-                <input type="email" class="email" placeholder="Email" name="Email">
+            <form id="myForm">
+                <input type="email" class="email"  placeholder="Email" name="Email">
                 <button class="submit" type="submit">I'm in</button>
             </form>
         </div>
     </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  // Initialize Supabase client
+  const supabase = supabase.createClient('https://ndlqitqjpihqyklcaqjy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5kbHFpdHFqcGlocXlrbGNhcWp5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5Njc5MTYyMywiZXhwIjoyMDEyMzY3NjIzfQ.HBXGivAcCbQYU4aZU630h16Kn2IBsaWy67r0upBS_l0');
+
+  // Handle form submission and other code
+});
+
+    // Initialize Supabase client
+
+
+// Handle form submission
+document.getElementById('myForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  // Get form data
+  
+  const email = document.getElementsByClassName('email').value;
+
+  // Insert data into your Supabase table
+  const { data, error } = await supabase
+    .from('form')
+    .upsert([
+      {  email }
+    ]);
+
+  if (error) {
+    console.error('Error inserting data:', error);
+  } else {
+    console.log('Data inserted successfully:', data);
+    // You can redirect or show a success message here
+  }
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/supabase@1"></script>
 </html>
