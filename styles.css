@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.stHalf {
+  background: linear-gradient(rgb(72, 84, 97), black, black);
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.buttonWrap {
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.subButton {
+  width: 261px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50px;
+  border: 0px;
+  color: white;
+  z-index: 999;
+  background: linear-gradient(0.25turn, rgb(72, 84, 97), rgb(30, 30, 30));
+}
+
+.subButton:hover {
+  cursor: pointer;
+  background: linear-gradient(0.25turn, rgb(30, 30, 30), rgb(72, 84, 97));
+}
+
+.launch {
+  color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 60% 30%;
+}
+
+.phone {
+  width: 80%;
+  padding: 0%;
+  margin-left: 120px;
+  border-radius: 100px;
+  filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7));
+}
+
+.text {
+  padding-top: 20%;
+}
+
+.textLwl {
+  color: white;
+  font-size: 40px;
+  margin-left: 20%;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.textTani {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 30%;
+  font-size: 25px;
+  color: white;
+  background: linear-gradient(0.25turn, rgb(30, 30, 30), rgb(72, 84, 97));
+  height: 60px;
+  width: 450px;
+  border-radius: 50px;
+}
+
+.ndHalf {
+  /*background-color: black;*/
+  margin-top: 10%;
+}
+
+h1,
+.irsal,
+.para {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 2%;
+}
+
+h1{
+  font-size: 35px;
+}
+
+.para{
+  font-size: 20px;
+}
+
+.irsal {
+  margin-bottom: 250px;
+}
+
+form{
+  display: flex;
+}
+form input {
+  border-radius: 30px;
+  margin-right: 20px;
+  height: 78px;
+  width: 800px;
+  font-size: 25px;
+  border: none;
+}
+
+
+form button {
+  height: 78px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(72, 84, 97);
+  transition: background-color 0.15s;
+  border: none;
+}
+
+.submit:hover {
+  background-color: rgba(72, 84, 97, 0.4);
+}
+
+input::placeholder {
+  font-weight: bolder;
+  opacity: 0.7;
+  color: rgb(72, 84, 97);
+}
+
+input {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo{
+    width: 71px;
+    height: 71px;
+  }
+  .para{
+    width: 90%;
+  }
+
+
+  .stHalf, .ndHalf{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .subButton{
+    width: 106px;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  .main{
+    grid-template-columns: 90%;
+  }
+
+  .text{
+    display: block;
+    padding-top: 10%;
+    height: 100px;
+  }
+
+  .textLwl{
+    font-size: 20px;
+  }
+
+  span{
+    font-size: 20px;
+  }
+
+  .textTani{
+    visibility: hidden;
+  }
+
+  .phone{
+    width: 40%;
+    margin-left: 29%;
+    border-radius: 10px;
+    filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7) drop-shadow(2px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-2px 10px 120px rgba(72, 84, 97, 0.7)) ); 
+  }
+
+  .ndHalf{
+    margin-top: 40%;
+  }
+
+  h1, .para{
+    width: 90%;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .para{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .email, .submit{
+    font-size: 10px;
+    height: 40px;
+  }
+
+  form{
+    display: flex;
+  }
+  form input {
+    width: 400px;
+  }
+  
+  
+  form button {
+    width: 30%;
+  }
+
+  .submit{
+    padding: 0 5px;
+  }
+
+  .irsal {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  html, body {
+  overflow-x: hidden;
+}
+
+  .para{
+    width: 90%;
+    text-align: center;
+  }
+
+  .logo{
+    width: 71px;
+    height: 71px;
+  }
+
+  .stHalf, .ndHalf{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+
+  }
+
+  .subButton{
+    width: 106px;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  .main{
+    grid-template-columns: 90%;
+  }
+
+  .text{
+    display: block;
+    padding-top: 10%;
+    height: 100px;
+  }
+
+  .textLwl{
+    font-size: 20px;
+  }
+
+  span{
+    font-size: 20px;
+  }
+
+  .textTani{
+    visibility: hidden;
+  }
+
+  .main{
+    width: 100%;
+  }
+
+  .phone{
+    width: 40%;
+    border-radius: 10px;
+  }
+
+  .ndHalf{
+    margin-top: 40%;
+  }
+
+  .stHalf, .ndHalf{
+    width: 100%;
+  }
+
+  h1, .para{
+    width: 90%;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1{
+    font-size: 15px;
+  }
+
+  .para{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .email, .submit{
+    font-size: 10px;
+    height: 40px;
+  }
+
+  form{
+    display: flex;
+  }
+  form input {
+    width: 200px;
+  }
+  
+  
+  form button {
+    width: 30%;
+  }
+
+  .submit{
+    width: 50px;
+  }
+
+  .irsal {
+    margin-bottom: 100px;
+  }
+}
