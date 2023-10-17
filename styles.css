@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -44,7 +44,6 @@ li {
 .buttonWrap {
   justify-content: center;
   margin-top: 20px;
-
 }
 
 .subButton {
@@ -78,14 +77,15 @@ li {
   padding: 0%;
   margin-left: 120px;
   border-radius: 100px;
-  filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7));
+  filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7))
+    drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7))
+    drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7));
 }
 
-.phone2{
-  width: 40%;
+#phone2 {
+  width: 50%;
   margin-left: 29%;
   border-radius: 10px;
-  filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7) drop-shadow(2px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-2px 10px 120px rgba(72, 84, 97, 0.7)) ); 
 }
 
 .text {
@@ -130,11 +130,11 @@ h1,
   margin-bottom: 2%;
 }
 
-h1{
+h1 {
   font-size: 35px;
 }
 
-.para{
+.para {
   font-size: 20px;
 }
 
@@ -142,7 +142,7 @@ h1{
   margin-bottom: 250px;
 }
 
-form{
+form {
   display: flex;
 }
 form input {
@@ -153,7 +153,6 @@ form input {
   font-size: 25px;
   border: none;
 }
-
 
 form button {
   height: 78px;
@@ -182,97 +181,104 @@ input {
 }
 
 @media only screen and (max-width: 768px) {
-  .logo{
+  .logo {
     width: 71px;
     height: 71px;
   }
-  .para{
+  .para {
     width: 90%;
   }
 
-
-  .stHalf, .ndHalf{
+  .stHalf,
+  .ndHalf {
     width: 100%;
   }
 
-  .title{
+  .title {
     font-size: 25px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
-  .subButton{
+  .subButton {
     width: 106px;
     height: 26px;
     font-size: 12px;
   }
 
-  .main{
+  .main {
     grid-template-columns: 90%;
   }
 
-  .text{
+  .text {
     display: block;
     padding-top: 10%;
     height: 100px;
   }
 
-  .textLwl{
+  .textLwl {
     font-size: 20px;
   }
 
-  span{
+  span {
     font-size: 20px;
   }
 
-  .textTani{
+  .textTani {
     visibility: hidden;
   }
 
-    .phone{
-      width: 40%;
-      margin-left: 29%;
-      border-radius: 10px;
-      filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7) drop-shadow(2px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-2px 10px 120px rgba(72, 84, 97, 0.7)) ); 
-    }
+  .phone {
+    width: 40%;
+    margin-left: 29%;
+    border-radius: 10px;
+    filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7))
+      drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7))
+      drop-shadow(
+        -1px 10px 120px rgba(72, 84, 97, 0.7) drop-shadow(
+            2px 10px 120px rgba(72, 84, 97, 0.7)
+          ) drop-shadow(-2px 10px 120px rgba(72, 84, 97, 0.7))
+      );
+  }
 
-  .ndHalf{
+  .ndHalf {
     margin-top: 40%;
   }
 
-  h1, .para{
+  h1,
+  .para {
     width: 90%;
     text-align: center;
     width: 100%;
   }
 
-  h1{
+  h1 {
     font-size: 20px;
   }
 
-  .para{
+  .para {
     font-size: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  .email, .submit{
+  .email,
+  .submit {
     font-size: 10px;
     height: 40px;
   }
 
-  form{
+  form {
     display: flex;
   }
   form input {
     width: 400px;
   }
-  
-  
+
   form button {
     width: 30%;
   }
 
-  .submit{
+  .submit {
     padding: 0 5px;
   }
 
@@ -281,112 +287,118 @@ input {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  html, body {
-  overflow-x: hidden;
-}
+@media only screen and (max-width: 425px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-  .para{
+  .para {
     width: 90%;
     text-align: center;
   }
 
-  .logo{
+  .logo {
     width: 71px;
     height: 71px;
   }
 
-  .stHalf, .ndHalf{
+  .stHalf,
+  .ndHalf {
     width: 100%;
   }
 
-  .title{
+  .title {
     font-size: 25px;
-    font-family: 'Inter', sans-serif;
-
+    font-family: "Inter", sans-serif;
   }
 
-  .subButton{
+  .subButton {
     width: 106px;
     height: 26px;
     font-size: 12px;
   }
 
-  .main{
+  .main {
     grid-template-columns: 90%;
   }
 
-  .text{
+  .text {
     display: block;
     padding-top: 10%;
     height: 100px;
   }
 
-  .textLwl{
+  .textLwl {
     font-size: 20px;
   }
 
-  span{
+  span {
     font-size: 20px;
   }
 
-  .textTani{
+  .textTani {
     visibility: hidden;
   }
 
-  .main{
+  .main {
     width: 100%;
   }
 
-  /* .phone{
-    width: 40%;
-    margin-left: 29%;
-    border-radius: 10px;
-    filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-1px 10px 120px rgba(72, 84, 97, 0.7) drop-shadow(2px 10px 120px rgba(72, 84, 97, 0.7)) drop-shadow(-2px 10px 120px rgba(72, 84, 97, 0.7)) ); 
-  } */
+  .phone {
+    filter: drop-shadow(0px 10px 120px rgba(72, 84, 97, 0.7))
+      drop-shadow(1px 10px 120px rgba(72, 84, 97, 0.7))
+      drop-shadow(
+        -1px 10px 120px rgba(72, 84, 97, 0.7) drop-shadow(
+            2px 10px 120px rgba(72, 84, 97, 0.7)
+          ) drop-shadow(-2px 10px 120px rgba(72, 84, 97, 0.7))
+      );
+  }
 
-  .ndHalf{
+  .ndHalf {
     margin-top: 40%;
   }
 
-  .stHalf, .ndHalf{
+  .stHalf,
+  .ndHalf {
     width: 100%;
   }
 
-  h1, .para{
+  h1,
+  .para {
     width: 90%;
     text-align: center;
     width: 100%;
   }
 
-  h1{
+  h1 {
     font-size: 15px;
   }
 
-  .para{
+  .para {
     font-size: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  .email, .submit{
+  .email,
+  .submit {
     font-size: 10px;
     height: 40px;
   }
 
-  form{
+  form {
     display: flex;
   }
   form input {
     width: 200px;
   }
-  
-  
+
   form button {
     width: 30%;
   }
 
-  .submit{
+  .submit {
     width: 50px;
   }
 
