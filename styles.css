@@ -12,8 +12,10 @@ body {
 }
 
 .stHalf {
-  background: linear-gradient(rgb(72, 84, 97), black, black);
+  background: linear-gradient(rgb(72, 84, 97), rgba(72, 84, 97, 0.37), black);
 }
+
+
 
 li {
   text-align: center;
