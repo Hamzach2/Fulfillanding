@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +11,32 @@
 
 
 </head>
+
 <body>
     <style>
-            @media (max-width: 640px) {
-        .l3iba {
-            display: none;
+        @media (max-width: 640px) {
+            .l3iba {
+                display: none;
+            }
         }
-    }
-    @media (min-width: 640px) {
-        
-        .l3iba2 {
-        
-            display: none;
-           
+
+        @media (min-width: 640px) {
+
+            .l3iba2 {
+
+                display: none;
+                position: relative;
+
+            }
+
         }
-    
-}
     </style>
     <div class="stHalf">
         <ul class="header">
             <li><img src="logo.png" class="logo" alt=""></li>
             <li class="title">FULFIL</li>
-            <li class="buttonWrap"><button class="subButton" onClick="document.getElementById('input').scrollIntoView();">Subscribe Now</button></li>
+            <li class="buttonWrap"><button class="subButton"
+                    onClick="document.getElementById('input').scrollIntoView();">Subscribe Now</button></li>
         </ul>
         <div class="main">
             <div class="text">
@@ -39,29 +44,28 @@
                 <div class="textTani">The Only App You'll Ever Need</div>
             </div>
             <div class="l3iba">
-                
+
                 <img src="loginpage.png" class="phone">
-                
+
             </div>
             <div class="l3iba2">
-                <div>
-                
-                <img src="loginpage.png" class="phone2">
-            </div>
                
+                <img src="loginpage2.png" class="phone2">
             </div>
+
         </div>
+    </div>
     </div>
     <div class="ndHalf" id="input">
         <h1>
             Subscribe Now
         </h1>
         <p class="para">
-            Sign up to be the first to know about our launch & claim your early bird gift. 
+            Sign up to be the first to know about our launch & claim your early bird gift.
         </p>
         <div class="irsal">
             <form id="myForm">
-                <input type="email" class="email"  placeholder="Email" name="Email">
+                <input type="email" class="email" placeholder="Email" name="Email">
                 <button class="submit" type="submit">I'm in</button>
             </form>
         </div>
@@ -69,38 +73,39 @@
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Supabase client
-  const supabase = supabase.createClient('https://ndlqitqjpihqyklcaqjy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5kbHFpdHFqcGlocXlrbGNhcWp5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5Njc5MTYyMywiZXhwIjoyMDEyMzY3NjIzfQ.HBXGivAcCbQYU4aZU630h16Kn2IBsaWy67r0upBS_l0');
+        // Initialize Supabase client
+        const supabase = supabase.createClient('https://ndlqitqjpihqyklcaqjy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5kbHFpdHFqcGlocXlrbGNhcWp5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5Njc5MTYyMywiZXhwIjoyMDEyMzY3NjIzfQ.HBXGivAcCbQYU4aZU630h16Kn2IBsaWy67r0upBS_l0');
 
-  // Handle form submission and other code
-});
+        // Handle form submission and other code
+    });
 
     // Initialize Supabase client
 
 
-// Handle form submission
-document.getElementById('myForm').addEventListener('submit', async (event) => {
-  event.preventDefault();
+    // Handle form submission
+    document.getElementById('myForm').addEventListener('submit', async (event) => {
+        event.preventDefault();
 
-  // Get form data
-  
-  const email = document.getElementsByClassName('email').value;
+        // Get form data
 
-  // Insert data into your Supabase table
-  const { data, error } = await supabase
-    .from('form')
-    .upsert([
-      {  email }
-    ]);
+        const email = document.getElementsByClassName('email').value;
 
-  if (error) {
-    console.error('Error inserting data:', error);
-  } else {
-    console.log('Data inserted successfully:', data);
-    // You can redirect or show a success message here
-  }
-});
+        // Insert data into your Supabase table
+        const { data, error } = await supabase
+            .from('form')
+            .upsert([
+                { email }
+            ]);
+
+        if (error) {
+            console.error('Error inserting data:', error);
+        } else {
+            console.log('Data inserted successfully:', data);
+            // You can redirect or show a success message here
+        }
+    });
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/supabase@1"></script>
+
 </html>
